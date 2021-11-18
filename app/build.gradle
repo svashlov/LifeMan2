@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    // Added plugins for functionalities
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
     id "kotlin-parcelize"
@@ -41,7 +40,6 @@ dependencies {
     def room_version = "2.3.0"
     implementation("androidx.room:room-runtime:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
-    // optional - Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$room_version")
 
     // Coroutines
